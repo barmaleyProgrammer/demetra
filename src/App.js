@@ -1,11 +1,22 @@
-function App() {
-  return (
-    <div>
-        <header>
-            <p className="text-center font-bold bottom-2 text-emerald-400">Demetra1</p>
-        </header>
-    </div>
-  );
-}
+
+import { BrowserRouter } from 'react-router-dom';
+
+import Header from './Components/header';
+import Footer from './Components/footer';
+import Main from './Components/main';
+// import ScrollToTop from './components/scrollToTop';
+
+const App = () => {
+    return (
+        <div className="app">
+                <BrowserRouter>
+                    {/*<ScrollToTop />*/}
+                    <Header />
+                    <Main />
+                    <Footer />
+                </BrowserRouter>
+        </div>
+    );
+};
 
 export default App;
