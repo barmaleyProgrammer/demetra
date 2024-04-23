@@ -2,7 +2,44 @@ import React from 'react';
 
 const Services = () => {
     return (
-        <div>
+        <div className="w-3/4 mx-auto">
+            <h1 className="text-5xl text-center p-3">Ціни бази відпочинку «Деметра</h1>
+            <h2 className="mb-8 text-center">На нашій базі є номери різних категорій</h2>
+
+            <div>
+                <article>
+                    <p>Ціни вказані в гривнях за номер за добу</p>
+                    <p>Стандартний час заїзду- з 14.00. Час виїзду- до 12.00</p>
+                    <p><b>Наявність номерів:</b></p>
+                    <ul>
+                        <li className="justify">дім трикімнатний;</li>
+                        <li className="justify">Спуск-підйом човна;</li>
+                        <li className="justify">високошвидкісний Wi-Fi Інтернет;</li>
+                    </ul>
+
+                    <p><b>У вартість номера входить:</b></p>
+                    <ul>
+                        <li className="justify">проживання в номері обраної категорії;</li>
+                        <li className="justify">Спуск-підйом човна;</li>
+                        <li className="justify">високошвидкісний Wi-Fi Інтернет;</li>
+                    </ul>
+
+                    <p><b>Додадково оплачується:</b></p>
+                    <ul>
+                        <li className="justify">проживання в номері обраної категорії;</li>
+                        <li className="justify">Спуск-підйом човна;</li>
+                        <li className="justify">високошвидкісний Wi-Fi Інтернет;</li>
+                        <li className="justify">діти до 6-ти років розміщуються безкоштовно без надання додаткового
+                            місця;
+                        </li>
+                        <li className="justify">для дітей віком до 3-х років безкоштовно надається
+                            ліжко-манеж (за
+                            запитом).
+                        </li>
+                    </ul>
+                </article>
+
+            </div>
             <p>
                 Деметра/ рибалка<br/>
                 Наявність номерів;<br/>

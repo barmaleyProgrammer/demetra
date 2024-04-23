@@ -14,7 +14,7 @@ import Services from '../pages/services';
 const Main = () => {
 
     return (
-        <main className="w-[1152px] mx-auto mt-5">
+        <main className="w-full mx-auto">
             <Routes>
                 <Route path="/" element={<Home />} />
                 {/*<Route path="/about" element={<About />} />*/}
