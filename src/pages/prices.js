@@ -5,7 +5,7 @@ const Prices = () => {
     return (
         <div className="text-[#2f4a69] w-4/5 justify-center mx-auto">
             <h1 className="text-4xl text-center p-3">Ціни бази риболовлі та сімейного відпочинку «Деметра</h1>
-            <h2 className="mb-8 text-center">На нашій базі є номери різних категорій</h2>
+            <h2 className="mb-4 text-center">На нашій базі є номери різних категорій</h2>
             <div className="">
                 <article>
                     <div className="mx-auto text-center">
