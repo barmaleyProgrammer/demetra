@@ -1,13 +1,14 @@
-import { NavLink } from 'react-router-dom';
-
 const Footer = () => {
 
     return (
         <footer>
-            <div className="w-1/2 mx-8 p-8">
-                    <div className="mb-1 mt-1 text-xs font-light">
-                        <p>demetra.fish © { new Date().getFullYear() }</p>
+            <div className="w-1/2 p-8 text-xs">
+                    <div className="text-xs font-light">
+                        <p> © { new Date().getFullYear() } demetra.fish</p>
                         <p>Всі права захищені</p>
+                    </div>
+                    <div className="font-light">
+                        barmaley_dev
                     </div>
             </div>
         </footer>
