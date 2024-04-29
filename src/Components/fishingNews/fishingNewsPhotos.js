@@ -1,6 +1,6 @@
 import {useState} from 'react';
-import arrowLeftCurrentNews from '../../img/arrow_right.svg';
-import arrowRightCurrentNews from '../../img/arrow_left.svg';
+import arrowLeftCurrentNews from '../../img/bass.png';
+import arrowRightCurrentNews from '../../img/bass_left.png';
 import listImg from "./list_img_fishingNews";
 import Modal from "../modal/modal";
 
@@ -28,8 +28,8 @@ const FishingNewsPhotos = () => {
 
         return (
             <div className="flex flex-row items-center justify-between gap-x-2">
-                <img className="cursor-pointer absolute bottom-[-140px] left-[170px]" src={arrowRightCurrentNews} alt="" onClick={prev}/>
-                <img className="cursor-pointer absolute bottom-[-140px] right-[170px]" src={arrowLeftCurrentNews} alt="" onClick={next}/>
+                <img className="cursor-pointer absolute bottom-[-170px] left-[170px] hover:w-20 hover:left-[130px] hover:bottom-[-190px]" src={arrowRightCurrentNews} alt="" onClick={prev}/>
+                <img className="cursor-pointer absolute bottom-[-170px] right-[170px] hover:w-20 hover:right-[130px] hover:bottom-[-190px]" src={arrowLeftCurrentNews} alt="" onClick={next}/>
             </div>
         );
 
