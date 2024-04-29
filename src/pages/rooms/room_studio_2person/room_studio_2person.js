@@ -13,7 +13,9 @@ const Room_studio_2person = () => {
                 <div className="w-[70%] mx-auto grid grid-flow-row grid-cols-4 gap-10 mt-6">
                     {list_img.map((item, key) =>
                         <div key={key}>
-                                <img className="h-auto w-60 rounded-lg cursor-pointer" src={item.image} alt="" onClick={() => setModalCurrentPage(item.image)}/>
+                            <img
+                                className={`h-auto w-60 rounded-lg cursor-pointer ${modalCurrentPage ? 'blur-[2px]' : ""}`}
+                                src={item.image} alt="" onClick={() => setModalCurrentPage(item.image)}/>
                         </div>
                     )}
                 </div>

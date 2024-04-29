@@ -22,13 +22,13 @@ const Header = () => {
                                     <NavLink className="p-0 text-lg" to="/territory">Територія</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink className="p-0 text-lg" to="/rooms_main">Ангар для човнів</NavLink>
+                                    <NavLink className="p-0 text-lg whitespace-nowrap" to="/rooms_main">Ангар для човнів</NavLink>
                                 </li>
                                 <li>
                                     <NavLink className="p-0 text-lg" to="/news">Новини</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink className="p-0 text-lg" to="/about">Про нас</NavLink>
+                                    <NavLink className="p-0 text-lg whitespace-nowrap" to="/about">Про нас</NavLink>
                                 </li>
                                 <li>
                                     <NavLink className="p-0 text-lg" to="/contacts">Контакти</NavLink>

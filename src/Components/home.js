@@ -67,7 +67,7 @@ const Home = () => {
                     З мирних видів переважно  водиться карась, лящ, плітка та сазан.<br/>
                     Надалі ми будемо вас тримати в курсі останніх новин риболовлі та спійманих трофеїв.<br/>
                     Ви також можете стати героєм стрічки новин, якщо надішлете Вашу цікаву історію нашому
-                    <NavLink className="text-amber-400 hover:text-blue-950" to="/contacts"> адміністратору</NavLink>
+                    <NavLink className="text-[#1a73e8] hover:text-blue-950" to="/contacts"> адміністратору</NavLink>
                 </p>
             </section>
             <section className="text-center h-auto mb-3 p-8 mx-auto text-[#2f4a69] py-4">
