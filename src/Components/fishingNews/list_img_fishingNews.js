@@ -27,10 +27,10 @@ export default [
         id: 7,
         image: '/base_image/fishingNews_img/photo_7.jpg'
     },
-    {
-        id: 8,
-        image: '/base_image/fishingNews_img/photo_8.png'
-    },
+    // {
+    //     id: 8,
+    //     image: '/base_image/fishingNews_img/photo_8.png'
+    // },
     {
         id: 9,
         image: '/base_image/fishingNews_img/photo_9.jpg'
