@@ -61,8 +61,8 @@ export default [
         id: 5,
         slug: 'toilet',
         main_img: '/base_image/toilet_img/photo_3.jpg',
-        title: 'Виділенні місця для паління',
-        description: 'Виділенні місця для паління',
+        title: 'Туалети( тепла підлога), гаряча вода на вулиці',
+        description: 'Туалети',
         images: [
             '/base_image/toilet_img/photo_1.jpg',
             '/base_image/toilet_img/photo_2.jpg',
