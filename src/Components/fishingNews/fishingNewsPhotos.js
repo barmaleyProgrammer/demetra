@@ -4,7 +4,7 @@ import arrowRightCurrentNews from '../../img/bass_left.png';
 import listImg from "./list_img_fishingNews";
 import Modal from "../modal/modal";
 
-const imgsPerPage = 3;
+const imgsPerPage = 4;
 
 const FishingNewsPhotos = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -46,7 +46,7 @@ const FishingNewsPhotos = () => {
                     result.map((item, key) => {
                         return (
                             <div key={key}>
-                                    <img className="rounded-lg mt-4 w-[369px] h-[266px]" src={item.image} alt="" onClick={() => setModalCurrentImg(item.image)}/>
+                                    <img className="rounded-lg mt-4 h-[369px] w-[266px]" src={item.image} alt="" onClick={() => setModalCurrentImg(item.image)}/>
                             </div>
                         );
                     })
