@@ -24,3 +24,4 @@ yarn-debug.log*
 yarn-error.log*
 /public/base_image/room_with_double_bed_and_sofa_img/photo_2.jpg
 /src/Components/scrollToTop.js
+/src/trash/*

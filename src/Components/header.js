@@ -16,7 +16,7 @@ const Header = () => {
                                     <NavLink className="p-0 text-lg" to="/prices">Ціни</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink className="p-0 text-lg" to="/rooms_main">Номери</NavLink>
+                                    <NavLink className="p-0 text-lg" to="/rooms">Номери</NavLink>
                                 </li>
                                 <li>
                                     <NavLink className="p-0 text-lg" to="/territory">Територія</NavLink>
