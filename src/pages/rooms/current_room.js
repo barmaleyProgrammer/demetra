@@ -7,7 +7,8 @@ const ImgRoomList = ({current}) => {
         <div>
             <div className="pb-10">
                 <h1 className="p-4 text-4xl text-center text-[#2f4a69]">{current.title}</h1>
-                <div className="w-[70%] mx-auto grid grid-flow-row grid-cols-4 gap-10 mt-6">
+                {/*<div className="w-[70%] mx-auto grid grid-flow-row grid-cols-4 gap-10 mt-6">*/}
+                <div className="w-[70%] mx-auto flex flex-wrap justify-center gap-10 mt-6">
                     {
                         current.images.map(( item, key) => {
                                 return (
