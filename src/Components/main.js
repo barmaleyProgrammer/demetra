@@ -10,7 +10,7 @@ import Home from './home';
 import Prices from '../pages/prices';
 import Rooms from '../pages/rooms';
 import Contacts from '../pages/contacts';
-import Territory from "../pages/territory/territory";
+import PhotoGallery from "../pages/photo_gallery";
 import About from "../pages/about";
 import News from "../pages/news";
 
@@ -25,8 +25,9 @@ const Main = () => {
                 <Route path="/news" element={<News />} />
                 <Route path="/prices" element={<Prices />} />
                 <Route path="/rooms/:slug?" element={<Rooms />} />
+                <Route path="/photo_gallery/:slug?" element={<PhotoGallery />} />
                 <Route path="/contacts" element={<Contacts />} />
-                <Route path="/territory/:id?" element={<Territory />} />
+                {/*<Route path="/territory/:id?" element={<Territory />} />*/}
             </Routes>
         </main>
     );

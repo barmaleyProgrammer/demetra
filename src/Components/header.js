@@ -19,11 +19,11 @@ const Header = () => {
                                     <NavLink className="p-0 text-lg" to="/rooms">Номери</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink className="p-0 text-lg" to="/territory">Територія</NavLink>
+                                    <NavLink className="p-0 text-lg" to="/photo_gallery">Галерея</NavLink>
                                 </li>
-                                <li>
-                                    <NavLink className="p-0 text-lg whitespace-nowrap" to="/rooms_main">Ангар для човнів</NavLink>
-                                </li>
+                                {/*<li>*/}
+                                {/*    <NavLink className="p-0 text-lg whitespace-nowrap" to="/rooms_main">Ангар для човнів</NavLink>*/}
+                                {/*</li>*/}
                                 <li>
                                     <NavLink className="p-0 text-lg" to="/news">Новини</NavLink>
                                 </li>
