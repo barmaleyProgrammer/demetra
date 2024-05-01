@@ -1,7 +1,7 @@
 export default [
     {
         id: 1,
-        image: '/base_image/territory_img/kitchen.jpg'
+        image: '/base_image/territory_img/photo_1.jpg'
     },
     {
         id: 2,
