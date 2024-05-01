@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
     justify-content: center;
     transition: 0.5s;
     opacity: 1;
@@ -17,7 +17,7 @@
 
 .modal__content {
     top: calc(5%);
-    position: absolute;
+    /*position: absolute;*/
     border-radius: 12px;
     background-color: #c9a999;
     transition: 0.4s all;
