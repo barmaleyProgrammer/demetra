@@ -10,12 +10,6 @@ import Home from './home';
 import Prices from '../pages/prices';
 import Rooms from '../pages/rooms';
 import Contacts from '../pages/contacts';
-import House_3rooms from "../trash/house_3rooms/house_3rooms";
-import RoomWithBedroom from "../trash/room_with_bedroom/room_with_bedroom";
-import RoomWithDoubleBedAndSofa from "../trash/room_with_double_bed_and_sofa/room_with_double_bed_and_sofa";
-import RoomStudioTwoPerson from "../trash/room_studio_2person/room_studio_2person";
-import RoomStudioFourPerson from "../trash/room_studio_4person/room_studio_4person";
-import Kitchen from "../trash/kitchen/kitchen";
 import Territory from "../pages/territory/territory";
 import About from "../pages/about";
 import News from "../pages/news";
@@ -31,12 +25,6 @@ const Main = () => {
                 <Route path="/news" element={<News />} />
                 <Route path="/prices" element={<Prices />} />
                 <Route path="/rooms/:slug?" element={<Rooms />} />
-                <Route path="/house_3rooms/:id?" element={<House_3rooms />} />
-                <Route path="/room_with_bedroom/:id?" element={<RoomWithBedroom />} />
-                <Route path="/room_with_double_bed_and_sofa_2000/:id?" element={<RoomWithDoubleBedAndSofa />} />
-                <Route path="/room_studio_2person/:id?" element={<RoomStudioTwoPerson />} />
-                <Route path="/room_studio_4person/:id?" element={<RoomStudioFourPerson />} />
-                <Route path="/kitchen/:id?" element={<Kitchen />} />
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/territory/:id?" element={<Territory />} />
             </Routes>
