@@ -30,9 +30,9 @@ const FishingNewsPhotos = () => {
         }
 
         return (
-            <div className="flex flex-row items-center justify-between gap-x-2">
-                <img className="cursor-pointer absolute bottom-[-170px] left-[170px] hover:w-20 hover:left-[130px] hover:bottom-[-190px]" src={arrowRightCurrentNews} alt="" onClick={prev}/>
-                <img className="cursor-pointer absolute bottom-[-170px] right-[170px] hover:w-20 hover:right-[130px] hover:bottom-[-190px]" src={arrowLeftCurrentNews} alt="" onClick={next}/>
+            <div className={`flex justify-between mx-auto ${isScreenSm ? 'w-80' : 'w-40', isScreenMd ? 'w-80' : 'w-40'}`}>
+                <img className="cursor-pointer" src={arrowRightCurrentNews} alt="" onClick={prev}/>
+                <img className="cursor-pointer" src={arrowLeftCurrentNews} alt="" onClick={next}/>
             </div>
         );
 
