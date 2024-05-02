@@ -11,7 +11,7 @@ const Header = () => {
                             <img className="h-[90px] w-[90px]" src={demetra} alt="logo_Demetra"/>
                         </NavLink>
                         <div className="items-center underline underline-offset-4 decoration-0">
-                            <ul className="hidden md:flex flex-row p-0 mt-0 space-x-12 border-0">
+                            <ul className=" md:flex flex-row p-0 mt-0 space-x-12 border-0">
                                 <li>
                                     <NavLink className="p-0 text-lg" to="/prices">Ціни</NavLink>
                                 </li>
