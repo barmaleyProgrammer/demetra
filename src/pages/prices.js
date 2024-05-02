@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 const Prices = () => {
     return (
         <div className="text-[#2f4a69] w-3/4 justify-center mx-auto">
-            <h1 className="text-4xl text-center p-3">Ціни бази риболовлі та сімейного відпочинку «Деметра</h1>
+            <h1 className="md:text-4xl text-xl text-center p-3">Ціни бази риболовлі та сімейного відпочинку «Деметра</h1>
             <h2 className="mb-4 text-center">На нашій базі є номери різних категорій</h2>
             <div className="">
                 <article>
@@ -13,7 +13,7 @@ const Prices = () => {
                         <p>Стандартний час заїзду- з xx.xx. Час виїзду- до xx.xx</p>
                         <p className="pt-2"><b>Наявність номерів:</b></p>
                     </div>
-                    <ul className="flex flex-wrap w-4/5 gap-20 gap-y-6 justify-center mx-auto mt-10">
+                    <ul className="grid grid-cols-1 md:grid-cols-3 gap-10 gap-y-6 justify-center mx-auto mt-10">
                         <li className="">
                             <NavLink to="/rooms/house_3rooms">
                                 <b className="text-cyan-800 hover:text-amber-600">дім трикімнатний</b><br/>
@@ -68,8 +68,6 @@ const Prices = () => {
                                 двоярусні ліжка
                             </p>
                         </li>
-                    {/*</ul>*/}
-                    {/*<ul className="flex flex-wrap w-3/4 gap-24 justify-between mx-auto mt-10">*/}
                         <li>
                             <b className="text-cyan-800">У вартість номера входить:</b><br/>
                             <p>
@@ -78,6 +76,8 @@ const Prices = () => {
                                 високошвидкісний Wi-Fi Інтернет(є такє?);<br/>
                             </p>
                         </li>
+                    </ul>
+                    <ul className="flex flex-wrap gap-24 justify-center mx-auto mt-10">
                         <li>
                             <b className="text-cyan-800">ДОДАТКОВІ ПОСЛУГИ:</b><br/>
                             Оренда катера-2500 грн;<br/>
