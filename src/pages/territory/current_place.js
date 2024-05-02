@@ -25,7 +25,7 @@ const ImgCurrentPlace = ({current}) => {
                 modalCurrentPage && (
                     <Modal close={() => setModalCurrentPage(false)}>
                         {/*<div className="">*/}
-                        <img className="p-4 h-[600px]" src={modalCurrentPage} alt=""onClick={() => setModalCurrentPage(false)}/>
+                        <img className="p-4 h-[500px]" src={modalCurrentPage} alt=""onClick={() => setModalCurrentPage(false)}/>
                         {/*</div>*/}
                     </Modal>
                 )

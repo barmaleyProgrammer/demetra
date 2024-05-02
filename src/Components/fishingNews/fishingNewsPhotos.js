@@ -93,7 +93,7 @@ const FishingNewsPhotos = () => {
             {
                 modalCurrentImg && (
                     <Modal close={() => setModalCurrentImg(false)}>
-                        <img className="p-4 h-[600px]" src={modalCurrentImg} alt=""onClick={() => setModalCurrentImg(false)}/>
+                        <img className="p-4 h-[500px]" src={modalCurrentImg} alt=""onClick={() => setModalCurrentImg(false)}/>
                     </Modal>
                 )
             }
