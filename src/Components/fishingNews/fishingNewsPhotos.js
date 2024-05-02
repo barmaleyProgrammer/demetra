@@ -1,14 +1,17 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import arrowLeftCurrentNews from '../../img/bass.png';
 import arrowRightCurrentNews from '../../img/bass_left.png';
 import listImg from "./list_img_fishingNews";
 import Modal from "../modal/modal";
+import { useResize } from './use-resize';
 
 const imgsPerPage = 4;
 
 const FishingNewsPhotos = () => {
+    const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
     const [currentPage, setCurrentPage] = useState(1);
     const [modalCurrentImg, setModalCurrentImg] = useState(false);
+    const [imgsPerPage, setImgsPerPage] = useState(2);
     const PaginationCurrentNews = ({ total, perPage, currentPage, paginate }) => {
         const pageCount = Math.ceil(total / perPage);
 
@@ -41,12 +44,26 @@ const FishingNewsPhotos = () => {
         const result = listImg.slice(firstNewsIndex, lastNewsIndex);
 
         return (
-            <div className="flex mb-8 w-3/4 justify-center mx-auto gap-10">
+            // <div className="flex mb-8 w-3/4 justify-center mx-auto gap-10">
+            <div className={`flex mb-8 w-3/4 justify-center mx-auto gap-10 
+            ${isScreenSm ? setImgsPerPage(4) : setImgsPerPage(3)}
+            ${isScreenMd ? setImgsPerPage(4) : setImgsPerPage(3)}
+            `}>
+                {/*<div className="App">*/}
+                {/*    <p>width: {width}px</p>*/}
+                {/*    <p>isScreenSm: {String(isScreenSm)}</p>*/}
+                {/*    <p>isScreenMd: {String(isScreenMd)}</p>*/}
+                {/*    <p>isScreenLg: {String(isScreenLg)}</p>*/}
+                {/*    <p>isScreenXl: {String(isScreenXl)}</p>*/}
+                {/*</div>*/}
                 {
                     result.map((item, key) => {
                         return (
                             <div key={key}>
-                                    <img className="rounded-lg mt-4 h-80 w-64" src={item.image} alt="" onClick={() => setModalCurrentImg(item.image)}/>
+                                <img className={`rounded-lg mt-4 w-64 
+                                     ${isScreenSm ? 'h-80 w-64' : 'h-35 w-20', isScreenMd ? 'h-80 w-64' : 'h-35 w-20', isScreenLg ? 'h-80 w-64' : 'h-35 w-20'} `}
+                                     src={item.image} alt=""
+                                     onClick={() => setModalCurrentImg(item.image)}/>
                             </div>
                         );
                     })
