@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import arrowLeftCurrentNews from '../../img/bass.png';
 import arrowRightCurrentNews from '../../img/bass_left.png';
 import listImg from "./list_img_fishingNews";
@@ -10,8 +10,32 @@ const FishingNewsPhotos = () => {
     const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
     const [currentPage, setCurrentPage] = useState(1);
     const [modalCurrentImg, setModalCurrentImg] = useState(false);
-    const [imgsPerPage, setImgsPerPage] = useState();
+    const [imgsPerPage, setImgsPerPage] = useState(4);
+    const [imgToShow, setImgToShow] = useState([]);
+
+    useEffect(() => {
+        const result = listImg.slice(((currentPage - 1) * imgsPerPage), imgsPerPage * currentPage);
+        setImgToShow(result);
+    }, [currentPage, imgsPerPage]);
+
+    useEffect(() => {
+        if (isScreenSm) {
+            setImgsPerPage(1);
+        }
+        if (isScreenMd) {
+            setImgsPerPage(2);
+        }
+        if (isScreenLg) {
+            setImgsPerPage(3);
+        }
+        if (isScreenXl) {
+            setImgsPerPage(4);
+        }
+    }, [width]);
+
+
     const PaginationCurrentNews = ({ total, perPage, currentPage, paginate }) => {
+
         const pageCount = Math.ceil(total / perPage);
 
         const next = () => {
@@ -29,7 +53,7 @@ const FishingNewsPhotos = () => {
         }
 
         return (
-            <div className={`flex justify-between mx-auto ${isScreenSm ? 'w-80' : 'w-40', isScreenMd ? 'w-80' : 'w-40'}`}>
+            <div className="flex justify-between mx-auto w-80">
                 <img className="cursor-pointer" src={arrowRightCurrentNews} alt="" onClick={prev}/>
                 <img className="cursor-pointer" src={arrowLeftCurrentNews} alt="" onClick={next}/>
             </div>
@@ -37,30 +61,14 @@ const FishingNewsPhotos = () => {
 
     };
 
-    const NewsList = ({news, currentPage, perPage}) => {
-        const lastNewsIndex = currentPage * perPage;
-        const firstNewsIndex = lastNewsIndex - perPage;
-        const result = listImg.slice(firstNewsIndex, lastNewsIndex);
-
+    const NewsList = ({ imgToShow }) => {
         return (
-            // <div className="flex mb-8 w-3/4 justify-center mx-auto gap-10">
-            <div className={`flex mb-8 w-3/4 justify-center mx-auto gap-10 
-            ${isScreenSm ? setImgsPerPage(4) : setImgsPerPage(3)}
-            ${isScreenLg ? setImgsPerPage(4) : setImgsPerPage(3)}
-            `}>
-                {/*<div className="App">*/}
-                {/*    <p>width: {width}px</p>*/}
-                {/*    <p>isScreenSm: {String(isScreenSm)}</p>*/}
-                {/*    <p>isScreenMd: {String(isScreenMd)}</p>*/}
-                {/*    <p>isScreenLg: {String(isScreenLg)}</p>*/}
-                {/*    <p>isScreenXl: {String(isScreenXl)}</p>*/}
-                {/*</div>*/}
+            <div className={`flex mb-8 w-3/4 justify-center mx-auto mt-4 gap-10`}>
                 {
-                    result.map((item, key) => {
+                    imgToShow.map((item, key) => {
                         return (
                             <div key={key}>
-                                <img className={`rounded-lg mt-4 w-64 
-                                     ${isScreenSm ? 'h-80 w-64' : 'h-35 w-20', isScreenMd ? 'h-80 w-64' : 'h-35 w-20', isScreenLg ? 'h-80 w-64' : 'h-35 w-20'} `}
+                                <img className={`rounded-lg sm:h-40 sm:w-32 lg:h-80 lg:w-64 `}
                                      src={item.image} alt=""
                                      onClick={() => setModalCurrentImg(item.image)}/>
                             </div>
@@ -81,11 +89,7 @@ const FishingNewsPhotos = () => {
                     paginate={setCurrentPage}
                 />
             </div>
-            <NewsList
-                news={listImg}
-                perPage={imgsPerPage}
-                currentPage={currentPage}
-            />
+            <NewsList imgToShow={imgToShow} />
             {
                 modalCurrentImg && (
                     <Modal close={() => setModalCurrentImg(false)}>

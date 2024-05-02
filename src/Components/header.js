@@ -6,7 +6,7 @@ const Header = () => {
         return (
             <header>
                 <div className="text-[#d3a850]">
-                    <div className="w-full flex flex-wrap gap-10 px-4 items-center justify-center">
+                    <div className="w-full flex flex-wrap gap-10 px-4 items-center justify-between pl-10 md:justify-center">
                         <NavLink to="/">
                             <img className="h-[90px] w-[90px]" src={demetra} alt="logo_Demetra"/>
                         </NavLink>
@@ -31,7 +31,7 @@ const Header = () => {
                                     <NavLink className="p-0 text-lg" to="/contacts">Контакти</NavLink>
                                 </li>
                             </ul>
-                            <button className="space-y-1 group md:hidden">
+                            <button className="space-y-1 group md:hidden pr-10">
                                 <div className="w-6 h-1 bg-white"></div>
                                 <div className="w-6 h-1 bg-white"></div>
                                 <div className="w-6 h-1 bg-white"></div>
