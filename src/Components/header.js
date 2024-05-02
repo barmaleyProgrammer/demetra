@@ -48,26 +48,26 @@ const Header = () => {
                                     </button>
                                     <ul className="pb-4 flex flex-col space-y-2">
                                         <li className="flex justify-center w-full py-2 hover:bg-[#202020]">
-                                            <NavLink className="p-0 text-lg" to="/">Головна</NavLink>
+                                            <NavLink className="p-0 text-lg" to="/" onClick={() => setShowMenu(false)}>Головна</NavLink>
                                         </li>
                                         <li className="flex justify-center w-full py-2 hover:bg-[#202020]">
-                                            <NavLink className="p-0 text-lg" to="/prices">Ціни</NavLink>
+                                            <NavLink className="p-0 text-lg" to="/prices" onClick={() => setShowMenu(false)}>Ціни</NavLink>
                                         </li>
                                         <li className="flex justify-center w-full py-2 hover:bg-[#202020]">
-                                            <NavLink className="p-0 text-lg" to="/rooms">Номери</NavLink>
+                                            <NavLink className="p-0 text-lg" to="/rooms" onClick={() => setShowMenu(false)}>Номери</NavLink>
                                         </li>
                                         <li className="flex justify-center w-full py-2 hover:bg-[#202020]">
-                                            <NavLink className="p-0 text-lg" to="/photo_gallery">Галерея</NavLink>
+                                            <NavLink className="p-0 text-lg" to="/photo_gallery" onClick={() => setShowMenu(false)}>Галерея</NavLink>
                                         </li>
                                         <li className="flex justify-center w-full py-2 hover:bg-[#202020]">
-                                            <NavLink className="p-0 text-lg" to="/news">Новини</NavLink>
+                                            <NavLink className="p-0 text-lg" to="/news" onClick={() => setShowMenu(false)}>Новини</NavLink>
                                         </li>
                                         <li className="flex justify-center w-full py-2 hover:bg-[#202020]">
-                                            <NavLink className="p-0 text-lg whitespace-nowrap" to="/about">Про
+                                            <NavLink className="p-0 text-lg whitespace-nowrap" to="/about" onClick={() => setShowMenu(false)}>Про
                                                 нас</NavLink>
                                         </li>
                                         <li className="flex justify-center w-full py-2 hover:bg-[#202020]">
-                                            <NavLink className="p-0 text-lg" to="/contacts">Контакти</NavLink>
+                                            <NavLink className="p-0 text-lg" to="/contacts" onClick={() => setShowMenu(false)}>Контакти</NavLink>
                                         </li>
                                     </ul>
                                 </div>
