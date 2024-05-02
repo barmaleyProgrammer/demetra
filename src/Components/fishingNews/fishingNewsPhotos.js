@@ -47,7 +47,7 @@ const FishingNewsPhotos = () => {
             // <div className="flex mb-8 w-3/4 justify-center mx-auto gap-10">
             <div className={`flex mb-8 w-3/4 justify-center mx-auto gap-10 
             ${isScreenSm ? setImgsPerPage(4) : setImgsPerPage(2)}
-            ${isScreenMd ? setImgsPerPage(4) : setImgsPerPage(3)}
+            ${isScreenMd ? setImgsPerPage(4) : setImgsPerPage(2)}
             `}>
                 {/*<div className="App">*/}
                 {/*    <p>width: {width}px</p>*/}
