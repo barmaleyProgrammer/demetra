@@ -16,7 +16,27 @@ const Home = () => {
             {/*https://www.youtube.com/watch?v=VFHWuy2olto*/}
             {/*https://medium.com/stackanatomy/build-an-elegant-gallery-with-react-responsive-carousel-926c4f34768e*/}
             {/*https://www.youtube.com/watch?v=C5NjxM1dyxY*/}
-            {/*<Carousel axis={'vertical'}>*/}
+            <Carousel >
+                <section className="bg-[#F0F9FF] h-auto">
+                    <div className="relative">
+                        <div className="absolute w-full text-center">
+                            <h1 className="p-4 text-[#2f4a69] text-lg md:text-3xl">База риболовлі та сімейного
+                                відпочинку "Деметра"</h1>
+                        </div>
+                        {/*https://www.google.com/imgres?q=%D0%A2%D1%80%D0%B8%D1%85%D0%B0%D1%82%D1%8B%20%D0%BC%D0%BE%D1%81%D1%82&imgurl=https%3A%2F%2Ftrixati.org.ua%2Fwp-content%2Fuploads%2F2015%2F05%2Fslide02.jpg&imgrefurl=https%3A%2F%2Ftrixati.org.ua%2F&docid=uFKRifDMPjvmLM&tbnid=3j6kKLaY5FQp2M&vet=12ahUKEwjlh62E6eGFAxX1ov0HHcTJDCMQM3oECBgQAA..i&w=1920&h=800&hcb=2&ved=2ahUKEwjlh62E6eGFAxX1ov0HHcTJDCMQM3oECBgQAA*/}
+                        <img className="" src={bug_bridge2} alt=""/>
+                    </div>
+                </section>
+                <section className="bg-[#F0F9FF] h-auto">
+                    <div className="relative">
+                        <div className="absolute w-full text-center">
+                            <h1 className="p-4 text-[#2f4a69] text-lg md:text-3xl">База риболовлі та сімейного
+                                відпочинку "Деметра"</h1>
+                        </div>
+                        {/*https://www.google.com/imgres?q=%D0%A2%D1%80%D0%B8%D1%85%D0%B0%D1%82%D1%8B%20%D0%BC%D0%BE%D1%81%D1%82&imgurl=https%3A%2F%2Ftrixati.org.ua%2Fwp-content%2Fuploads%2F2015%2F05%2Fslide02.jpg&imgrefurl=https%3A%2F%2Ftrixati.org.ua%2F&docid=uFKRifDMPjvmLM&tbnid=3j6kKLaY5FQp2M&vet=12ahUKEwjlh62E6eGFAxX1ov0HHcTJDCMQM3oECBgQAA..i&w=1920&h=800&hcb=2&ved=2ahUKEwjlh62E6eGFAxX1ov0HHcTJDCMQM3oECBgQAA*/}
+                        <img className="" src={bug_bridge2} alt=""/>
+                    </div>
+                </section>
                 <section className="bg-[#F0F9FF] h-auto">
                     <div className="relative">
                         <div className="absolute w-full text-center">
@@ -40,7 +60,7 @@ const Home = () => {
                 {/*        <img className="" src={pike} alt=""/>*/}
                 {/*    </div>*/}
                 {/*</section>*/}
-            {/*</Carousel>*/}
+            </Carousel>
             <section className="w-3/4 text-center mx-auto text-[#2f4a69] font-[Roboto] text-xl my-3 mb-8">
                 <div>
                     <span>База риболовлі та сімейного відпочинку "Деметра" відкриває сезон у 2024 році.</span><br/>
