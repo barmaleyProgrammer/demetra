@@ -19,8 +19,8 @@ const Home = () => {
             {/*<Carousel axis={'vertical'}>*/}
                 <section className="bg-[#F0F9FF] h-auto">
                     <div className="relative">
-                        <div className="absolute">
-                            <h1 className="p-4 text-[#2f4a69] text-3xl text-center">База риболовлі та сімейного
+                        <div className="absolute w-full text-center">
+                            <h1 className="p-4 text-[#2f4a69] text-lg md:text-3xl">База риболовлі та сімейного
                                 відпочинку "Деметра"</h1>
                         </div>
                         {/*https://www.google.com/imgres?q=%D0%A2%D1%80%D0%B8%D1%85%D0%B0%D1%82%D1%8B%20%D0%BC%D0%BE%D1%81%D1%82&imgurl=https%3A%2F%2Ftrixati.org.ua%2Fwp-content%2Fuploads%2F2015%2F05%2Fslide02.jpg&imgrefurl=https%3A%2F%2Ftrixati.org.ua%2F&docid=uFKRifDMPjvmLM&tbnid=3j6kKLaY5FQp2M&vet=12ahUKEwjlh62E6eGFAxX1ov0HHcTJDCMQM3oECBgQAA..i&w=1920&h=800&hcb=2&ved=2ahUKEwjlh62E6eGFAxX1ov0HHcTJDCMQM3oECBgQAA*/}
@@ -41,7 +41,7 @@ const Home = () => {
                 {/*    </div>*/}
                 {/*</section>*/}
             {/*</Carousel>*/}
-            <section className="w-1/2 text-center mx-auto text-[#2f4a69] font-[Roboto] text-xl my-3 mb-8">
+            <section className="w-3/4 text-center mx-auto text-[#2f4a69] font-[Roboto] text-xl my-3 mb-8">
                 <div>
                     <span>База риболовлі та сімейного відпочинку "Деметра" відкриває сезон у 2024 році.</span><br/>
                     <span>Завжди раді вас бачити!</span>
@@ -54,16 +54,17 @@ const Home = () => {
                 </div>
                     <div className="mt-8">
                         <h4>Ласкаво просимо!</h4>
-                        <span>База риболовлі та сімейного відпочинку Деметра знаходиться на лівому березі басейну
-                            річки Південний Буг між селами Піски та Гурʼївка, близько 25 км від Миколаєва.<br/>
+                        <p className="w-full md:w-3/4 md:mx-auto">
+                            База риболовлі та сімейного відпочинку Деметра знаходиться на лівому березі басейну
+                            річки Південний Буг між селами Піски та Гурʼївка, близько 25 км від Миколаєва.
                             Це місце приваблює риболовів та поцінувачів тихого та культурного відпочинку.
-                           <br/> Вас чекають комфортабельні номери, затишок та вдала риболовля.
-                       </span>
+                            Вас чекають комфортабельні номери, затишок та вдала риболовля.
+                       </p>
                     </div>
             </section>
             <section className="font-[Poppins] text-xl text-center h-auto mx-auto bg-slate-200 text-[#2f4a69] pb-16 pt-16">
                 <h1 className="text-[#2f4a69] text-4xl p-3">Рибалка на Південному Бузі</h1>
-                <p>
+                <p className="px-5">
                     Південний Буг - це найриболовніша річка України, яка приваблює не тільки аматорів та початківців рибної ловлі,
                     <br/>але й найтитулованіших риболовів та спортсменів, які приїжджають з різних регіонів країни.<br/>
                     Найпопулярніші види  хижої риби в місцевих водоймах -  щука, окунь та судак.
