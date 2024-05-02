@@ -35,7 +35,7 @@ const Header = () => {
                                 <div className="w-6 h-1 bg-white"></div>
                                 <div className="w-6 h-1 bg-white"></div>
                                 <div className="w-6 h-1 bg-white"></div>
-                                <ul className="bg-[#252525] w-screen pb-10 absolute group-focus:top-0 -top-full right-0 duration-150 flex flex-col space-y-3 justify-end">
+                                <ul className="z-30 bg-[#252525] w-screen pb-10 absolute group-focus:top-0 -top-full right-0 duration-150 flex flex-col space-y-3 justify-end">
                                    <button className="px-10 py-4 relative ml-auto">
                                         <div className="w-6 h-1 bg-white rotate-45 absolute"></div>
                                         <div className="w-6 h-1 bg-white -rotate-45 absolute"></div>

@@ -10,11 +10,12 @@ const Prices = () => {
                 <article>
                     <div className="mx-auto text-center">
                         <p>Ціни вказані в гривнях за номер за добу</p>
-                        <p>Стандартний час заїзду- з xx.xx. Час виїзду- до xx.xx</p>                    <p className="pt-2"><b>Наявність номерів:</b></p>
+                        <p>Стандартний час заїзду- з xx.xx. Час виїзду- до xx.xx</p>
+                        <p className="pt-2"><b>Наявність номерів:</b></p>
                     </div>
-                    <ul className="flex flex-wrap w-3/4 gap-20 justify-center mx-auto mt-10">
+                    <ul className="flex flex-wrap w-4/5 gap-20 gap-y-6 justify-center mx-auto mt-10">
                         <li className="">
-                            <NavLink to="/house_3rooms">
+                            <NavLink to="/rooms/house_3rooms">
                                 <b className="text-cyan-800 hover:text-amber-600">дім трикімнатний</b><br/>
                             </NavLink>
                             <p className="pt-1">4000грн/ доба.<br/>
@@ -27,7 +28,7 @@ const Prices = () => {
                             </p>
                         </li>
                         <li className="">
-                            <NavLink to="/room_with_bedroom">
+                            <NavLink to="/rooms/room_with_bedroom">
                                 <b className="text-cyan-800 hover:text-amber-600">номер кухня + спальня;</b><br/>
                             </NavLink>
                             <p className="pt-1">2500 грн/ доба.<br/>
@@ -39,7 +40,7 @@ const Prices = () => {
                             </p>
                         </li>
                         <li className="">
-                            <NavLink to="/room_with_double_bed_and_sofa_2000">
+                            <NavLink to="/rooms/room_studio_2person">
                                 <b className="text-cyan-800 hover:text-amber-600">Номер студія(2 персони);</b><br/>
                             </NavLink>
                             <p className="pt-1">1500 грн/ доба</p>
@@ -48,7 +49,7 @@ const Prices = () => {
                             </p>
                         </li>
                         <li className="">
-                            <NavLink to="/room_with_double_bed_and_sofa_2000">
+                            <NavLink to="/rooms/room_with_double_bed_and_sofa">
                                 <b className="text-cyan-800 hover:text-amber-600">Номер-студія(3 персони);</b><br/>
                             </NavLink>
                             <p className="pt-1">2000 грн/ доба<br/>
@@ -58,7 +59,7 @@ const Prices = () => {
                             </p>
                         </li>
                         <li className="">
-                            <NavLink to="/room_with_double_bed_and_sofa_2000">
+                            <NavLink to="/rooms/room_studio_4person">
                                 <b className="text-cyan-800 hover:text-amber-600">Номер- студія(4 персони);</b><br/>
                             </NavLink>
                             <p className="pt-1">2000 грн/доба<br/>
@@ -70,7 +71,7 @@ const Prices = () => {
                     {/*</ul>*/}
                     {/*<ul className="flex flex-wrap w-3/4 gap-24 justify-between mx-auto mt-10">*/}
                         <li>
-                            <b className="text-cyan-800 hover:text-amber-600">У вартість номера входить:</b><br/>
+                            <b className="text-cyan-800">У вартість номера входить:</b><br/>
                             <p>
                                 проживання в номері обраної категорії;<br/>
                                 Спуск-підйом човна;<br/>
@@ -78,7 +79,7 @@ const Prices = () => {
                             </p>
                         </li>
                         <li>
-                            <b className="text-cyan-800 hover:text-amber-600">ДОДАТКОВІ ПОСЛУГИ:</b><br/>
+                            <b className="text-cyan-800">ДОДАТКОВІ ПОСЛУГИ:</b><br/>
                             Оренда катера-2500 грн;<br/>
                             Послуги єгера-1000 грн;<br/>
                             Спуск-підйом-500 грн* <br/>

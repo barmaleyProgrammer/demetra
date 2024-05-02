@@ -25,7 +25,7 @@ const ImgRoomList = ({current}) => {
                 modalCurrentPage && (
                     <Modal close={() => setModalCurrentPage(false)}>
                         {/*<div className="">*/}
-                        <img className="p-4 h-[800px]" src={modalCurrentPage} alt=""/>
+                        <img className="p-4 h-[800px]" src={modalCurrentPage} alt="" onClick={() => setModalCurrentPage(false)}/>
                         {/*</div>*/}
                     </Modal>
                 )
