@@ -1,17 +1,16 @@
-import {useState, useEffect} from 'react';
+import { useState } from 'react';
 import arrowLeftCurrentNews from '../../img/bass.png';
 import arrowRightCurrentNews from '../../img/bass_left.png';
 import listImg from "./list_img_fishingNews";
 import Modal from "../modal/modal";
 import { useResize } from './use-resize';
 
-const imgsPerPage = 4;
 
 const FishingNewsPhotos = () => {
     const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
     const [currentPage, setCurrentPage] = useState(1);
     const [modalCurrentImg, setModalCurrentImg] = useState(false);
-    const [imgsPerPage, setImgsPerPage] = useState(2);
+    const [imgsPerPage, setImgsPerPage] = useState();
     const PaginationCurrentNews = ({ total, perPage, currentPage, paginate }) => {
         const pageCount = Math.ceil(total / perPage);
 
@@ -46,8 +45,8 @@ const FishingNewsPhotos = () => {
         return (
             // <div className="flex mb-8 w-3/4 justify-center mx-auto gap-10">
             <div className={`flex mb-8 w-3/4 justify-center mx-auto gap-10 
-            ${isScreenSm ? setImgsPerPage(4) : setImgsPerPage(2)}
-            ${isScreenMd ? setImgsPerPage(4) : setImgsPerPage(2)}
+            ${isScreenSm ? setImgsPerPage(4) : setImgsPerPage(3)}
+            ${isScreenLg ? setImgsPerPage(4) : setImgsPerPage(3)}
             `}>
                 {/*<div className="App">*/}
                 {/*    <p>width: {width}px</p>*/}
