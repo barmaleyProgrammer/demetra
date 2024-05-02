@@ -46,7 +46,7 @@ const FishingNewsPhotos = () => {
                     result.map((item, key) => {
                         return (
                             <div key={key}>
-                                    <img className="rounded-lg mt-4 h-[369px] w-[266px]" src={item.image} alt="" onClick={() => setModalCurrentImg(item.image)}/>
+                                    <img className="rounded-lg mt-4 h-80 w-64" src={item.image} alt="" onClick={() => setModalCurrentImg(item.image)}/>
                             </div>
                         );
                     })
