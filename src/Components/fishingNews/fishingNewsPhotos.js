@@ -4,7 +4,7 @@ import arrowRightCurrentNews from '../../img/bass_left.png';
 import listImg from "./list_img_fishingNews";
 import Modal from "../modal/modal";
 import { useResize } from './use-resize';
-
+// https://github.com/tutorials-coding/use-resize/blob/main/src/App.js
 
 const FishingNewsPhotos = () => {
     const { width, isScreenSm, isScreenMd, isScreenLg, isScreenXl } = useResize();
