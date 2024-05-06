@@ -53,7 +53,7 @@ const FishingNewsPhotos = () => {
         }
 
         return (
-            <div className="flex justify-between mx-auto w-80">
+            <div className="flex justify-between mx-auto w-80 md:w-3/4">
                 <img className="cursor-pointer" src={arrowRightCurrentNews} alt="" onClick={prev}/>
                 <img className="cursor-pointer" src={arrowLeftCurrentNews} alt="" onClick={next}/>
             </div>
