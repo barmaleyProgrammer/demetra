@@ -10,9 +10,9 @@ const allPlaces = ({ data }) => {
                     data.map((item, key) => {
                         return (
                             <div key={key}>
-                                <NavLink to={`/photo_gallery/${item.slug}`}>
-                                    <img className="rounded-lg mt-4 h-[369px] w-[266px]" src={item.main_img} alt=""/>
-                                    <p className="text-[#ABABAB] text-sm py-2">{item.description}</p>
+                                <NavLink to={`/photo_gallery/${item.id}`}>
+                                    <img className="rounded-lg mt-4 h-[369px] w-[266px]" src={item.main_photo.image} alt=""/>
+                                    <p className="text-[#ABABAB] text-sm py-2">{item.name}</p>
                                 </NavLink>
                             </div>
                         );

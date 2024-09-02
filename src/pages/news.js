@@ -1,7 +1,14 @@
-import React from 'react';
+import {useEffect, useState} from 'react';
 import {NavLink} from "react-router-dom";
+import {newsList} from '../api2';
 
 const News = () => {
+
+    useEffect( () => {
+        newsList().then((result) => setNews_cms(result));
+    }, []);
+
+    const [news_cms, setNews_cms] = useState([]);
     return (
         <div className="w-3/4 mx-auto text-[#2f4a69] font-[Roboto] text-xl my-3 mb-8">
             <h1 className="text-4xl p-3 text-center">Рибалка на Південному Бузі</h1>
@@ -19,13 +26,26 @@ const News = () => {
                 Ви також можете стати героєм стрічки новин, якщо надішлете Вашу цікаву історію нашому
                 <NavLink className="text-amber-400 hover:text-blue-950" to="/contacts"> адміністратору</NavLink>
             </p>
-            <h1 className="text-4xl p-3 text-center">Увага!</h1>
-            <h1 className="text-center">Про заборону добування (вилову) водних біоресурсів:</h1>
-            <p className="indent-8 text-center"><br/>
-                р. Південний Буг* - від впадання у Бузький лиман до с. Голоскове - з 5 квітня до 25 травня;
-            </p>
-            <a href="https://zakon.rada.gov.ua/laws/show/z1412-22#Text">
-                <p className="text-blue-500 text-center">посилання на НАКАЗ(додаток 3,частина II)</p></a>
+            {
+                news_cms.map((item, key) => {
+                    const formattedDate = new Date(item.publish_date).toLocaleDateString('ru-RU', {
+                        day: '2-digit',
+                        month: '2-digit',
+                        year: 'numeric',
+                    });
+                    return (
+                        <div key={key} className="relative">
+                            <hr className="mt-4"/>
+                            <div
+                                className="absolute left-0 top-0 ml-4 mt-4 text-sm text-gray-600">Дата публікації: {formattedDate}</div>
+                            <h2 className="text-4xl p-3 text-center">{item.title}</h2>
+                            <p className="text-center">
+                                <div dangerouslySetInnerHTML={{__html: item.body}}></div>
+                            </p>
+                        </div>
+                    )
+                })
+            }
         </div>
     );
 };

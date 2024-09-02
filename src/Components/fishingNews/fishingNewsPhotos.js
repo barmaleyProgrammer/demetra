@@ -4,6 +4,7 @@ import arrowRightCurrentNews from '../../img/bass_left.png';
 import listImg from "./list_img_fishingNews";
 import Modal from "../modal/modal";
 import { useResize } from './use-resize';
+import {photosList} from "../../api2";
 // https://github.com/tutorials-coding/use-resize/blob/main/src/App.js
 
 const FishingNewsPhotos = () => {
@@ -12,11 +13,16 @@ const FishingNewsPhotos = () => {
     const [modalCurrentImg, setModalCurrentImg] = useState(false);
     const [imgsPerPage, setImgsPerPage] = useState(4);
     const [imgToShow, setImgToShow] = useState([]);
+    const [photos, setPhotos] = useState([]);
 
     useEffect(() => {
-        const result = listImg.slice(((currentPage - 1) * imgsPerPage), imgsPerPage * currentPage);
+        photosList().then((result) => setPhotos(result));
+    }, []);
+
+    useEffect(() =>  {
+        const result = photos.slice(((currentPage - 1) * imgsPerPage), imgsPerPage * currentPage);
         setImgToShow(result);
-    }, [currentPage, imgsPerPage]);
+    }, [photos, currentPage, imgsPerPage]);
 
     useEffect(() => {
         if (isScreenSm) {
@@ -83,7 +89,7 @@ const FishingNewsPhotos = () => {
         <>
             <div className="flex flex-row items-center justify-between relative">
                 <PaginationCurrentNews
-                    total={listImg.length}
+                    total={photos.length}
                     perPage={imgsPerPage}
                     currentPage={currentPage}
                     paginate={setCurrentPage}

@@ -101,7 +101,7 @@ const Home = () => {
             <section className="text-center border-2 bg-slate-200">
                 ми на мапі
                 <iframe title="myFrame" className="w-3/4 h-96 mx-auto p-3"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6912.198806430568!2d31.846115322159463!3d47.12386325392417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5bf84f49e2e83%3A0x5fa0683ca5bf42!2z0JHQsNC30LA!5e0!3m2!1sru!2sua!4v1714045805492!5m2!1sru!2sua"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15152.768720124739!2d31.849835066879503!3d47.12369563441858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5bf002bd69a37%3A0xcdb90a316bf7ad69!2z0JPQvtGC0LXQu9GMIMKrRGVtZXRyYcK7IHwg0JPRg9GAJ9GX0LLQutCw!5e1!3m2!1sru!2sua!4v1725286622692!5m2!1sru!2sua"
                         allowFullScreen="" loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"></iframe>
             </section>
