@@ -2,8 +2,8 @@ import axios from 'axios';
 // import ApiError from './error';
 
 const connect = axios.create({
-    // baseURL: (process.env.NODE_ENV === 'development') ? 'http://127.0.0.1:8000/api' : `${window.location.protocol}//api.demetra.fish/api`,
-    baseURL: (process.env.NODE_ENV === 'development') ? `${window.location.protocol}//api.demetra.fish/api` : 'http://127.0.0.1:8000/api',
+    baseURL: (process.env.NODE_ENV === 'development') ? 'http://127.0.0.1:8000/api' : `${window.location.protocol}//api.demetra.fish/api`,
+    // baseURL: (process.env.NODE_ENV === 'development') ? `${window.location.protocol}//api.demetra.fish/api` : 'http://127.0.0.1:8000/api',
     // baseURL: 'http://127.0.0.1:8000/api',
     responseType: 'json',
     maxRedirects: 0,
@@ -44,5 +44,9 @@ export const photosList = () => {
     return connect.get(`/homepagephotos?fields=${fields.join(',')}`)
         .then((res) => res.data);
 };
+
+export const serviceList = () => {
+    return connect.get('/service').then((res) => res.data);
+}
 
 
