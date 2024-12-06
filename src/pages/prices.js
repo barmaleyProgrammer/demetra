@@ -34,7 +34,7 @@ const Prices = () => {
         <div className="text-[#2f4a69] w-11/12 md:w-3/4 justify-center mx-auto">
             <h1 className="md:text-4xl text-2xl text-center p-4 font-bold">Ціни бази риболовлі та сімейного відпочинку «Деметра»</h1>
             <h2 className="text-lg md:text-2xl mb-6 text-center">На нашій базі є номери різних категорій</h2>
-            <div>Просимо звернути увагу !!! <br> На час опалювального сезону вартiсть номерiв збiльшуеться на 500 грн за добу. <br> Дякуємо за розумiння. </div>
+            <div className="text-lg md:text-2xl mb-7 text-center">Просимо звернути увагу !!! <br> На час опалювального сезону вартiсть номерiв збiльшуеться на 500 грн за добу. <br> Дякуємо за розумiння. </div>
             <article>
                 <div className="text-center mb-8">
                     <p>Ціни вказані в гривнях за номер за добу</p>
